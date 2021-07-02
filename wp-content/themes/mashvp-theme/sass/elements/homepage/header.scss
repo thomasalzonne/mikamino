@@ -1,0 +1,210 @@
+.header{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    min-height: 900px;
+}
+.swiper-pagination-bullet {
+    width: unset !important;
+    height: unset !important;
+    text-align: center !important;
+    line-height: unset !important;
+    border-radius: unset !important;
+    background: transparent !important;
+    font-size: 12px;
+    color: #fff !important;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: unset !important;
+  }
+  
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+      bottom: 50% !important;
+      width: fit-content !important;
+  }
+  .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+  }
+  .swiper-container{
+      height: 100%;
+      position: unset !important;
+  }
+  .swiper-wrapper{
+      position: absolute !important;
+      left: 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+p.headertext {
+    width: fit-content;
+    position: absolute;
+    color: #FBF8E8;
+    bottom: 25%;
+    font-size: 60px;
+    line-height: 78px;
+}
+.mainnav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(
+        180deg
+        , #000000 0%, rgba(0,0,0,0) 100%);
+    opacity: 0.5;
+}
+.profil{
+    display: flex;
+    color: white;
+}
+.compte{
+    display: flex;
+}
+ul#menu-mainnav{
+    display: flex;
+    margin: auto;
+    margin-left: 15px;
+}
+ul#menu-mainnav li {
+    margin: 0 25px;
+}
+.mainnav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+.compte img {
+    height: 24px;
+    width: 20px;
+}
+.logo img{
+    width: 90px;
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.profil, .menu-mainnav-container {
+    height: 100px;
+    border-bottom: 1px solid white;
+    display: flex;
+}
+.logo {
+    padding: 0 85px;
+    position: relative;
+}
+.profil {
+    justify-content: flex-end;
+}
+.profilcontainer {
+    display: flex;
+    height: fit-content;
+    margin: auto 0;
+    margin-right: 15px;
+}
+.panier, .compte {
+    margin: 0 25px;
+}
+.animnav{
+    height: 100px;
+    background: unset !important;
+    opacity: 1 !important;
+    background-color: #FBF8E8 !important;
+}
+.compte svg {
+    height: 24px;
+    margin-left: 10px;
+}
+.logob{
+    opacity: 0;
+}
+.animlogob{
+    width: 45px !important;
+    margin-top: 0 !important;
+    opacity: 1 !important;
+    transition-property: width, height;
+    transition-duration: 1s;
+}
+.mobnav{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    min-height: 60px;
+    background-color: #FBF8E8;
+}
+#myLinks {
+    display: none;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+.profilmob{
+    grid-column: 2;
+    display: flex;
+    min-height: 60px;
+}
+.profilcontainermob{
+    display: flex;
+    height: fit-content;
+    font-size: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.comptemob {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: auto;
+}
+.paniermob {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.comptemob svg {
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.btnmobmenu {
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+#myLinks .menu-mainnav-container {
+    height: fit-content;
+}
+ul#menu-mainnav-1 li {
+    margin: 10px 0 10px 20px;
+}
+.mobnav.grid2{
+    display: none;
+}
+#menu-mainnav-1 a {
+    text-decoration: none;
+}
+@media screen and (max-width: 800px){
+    .mainnav{
+        display: none;
+    }
+    .mobnav.grid2{
+        display: grid;
+    }
+    p.headertext {
+        font-size: 32px;
+        line-height: 42px;
+        bottom: 33%;
+    }  
+}

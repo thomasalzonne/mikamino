@@ -1,0 +1,29 @@
+$desktop-layout-width: 1160px !default;
+$desktop-grid-gutter: 40px !default;
+
+$mobile-layout-width: 900px !default;
+$mobile-grid-gutter: 10px !default;
+
+$desktop-footer-height: 60px !default;
+$mobile-footer-height: 180px !default;
+
+// @for $i from 1 through 50 {
+//     $i: $i * 10;
+
+//     .pt#{$i} {
+//         padding-top: #{$i}px;
+//     }
+// }
+
+// $title-sizes: (
+//     1: (
+//         font-size: 32px,
+//         line-height: 46px
+//     ),
+// );
+
+// @each $level, $values in $title-sizes {
+//     .heading-#{$level} {
+//         font-size: map-get($values, font-size);
+//     }
+// }

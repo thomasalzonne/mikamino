@@ -1,0 +1,58 @@
+.mainnav.grid.animnav.boutique{
+    color:black;
+    border-bottom: 1px solid black;
+}
+
+.boutique .profil, .boutique .menu-mainnav-container{
+    border-bottom: unset;
+    color: black;
+}
+.boutique.mainnav a{
+    color: black;
+}
+.logoC {
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+}
+.headerboutique {
+    min-height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+}
+.hfull{
+    height: 100%;
+}
+.mxauto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mta{
+    margin-top: auto;
+}
+.boutiquetitle {
+    grid-column: 2/span 4;
+    font-size: 50px;
+    line-height: 65px;
+    color: #FBF8E8;
+    margin-bottom: 10px;
+}
+nav.woocommerce-breadcrumb {
+    font-size: 10px;
+    line-height: 13px;
+    color: #FBF8E8;
+    grid-row: 1;
+    grid-column: 2;
+    margin-bottom: 560px;
+}
+.boutiquetext {
+    grid-column: 2/Span 4;
+    line-height: 21px;
+    color: #565656;
+    margin-top: 10px;
+}
+main nav.woocommerce-breadcrumb{
+    display: none;
+}

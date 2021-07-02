@@ -1,0 +1,64 @@
+.insta{
+    background-color: #FBF8E8;
+}
+.pt100{
+    padding-top: 100px;
+}
+.logoinsta{
+    grid-column: 6/span 2;
+}
+.loginsta{
+    background-image: url('assets/img/insta.svg');
+    height: 20px;
+    background-repeat: no-repeat;
+    width: 20px;
+    margin: auto;
+}
+.instatitle{
+    grid-column: 3/span 8;
+    text-align: center;
+    color: #565656;
+    font-size: 50px;
+    line-height: 65px;
+}
+.gallery{
+    grid-row: 3;
+    grid-column: span 12;
+}
+.instaimg{
+    grid-column: span 3;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50px;
+}
+.pb100{
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 800px) {
+    .gallery.grid12.pb100 {
+        display: flex;
+        grid-column-gap: unset;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    .instaimg:nth-child(3), .instaimg:nth-child(4){
+        display: none;
+    }
+    img.instaimg {
+        width: 49%;
+        border-radius: 20px;
+    }
+    .instatitle {
+        font-size: 26px;
+        line-height: 31px;
+    }
+    .grid12.wi90.ma.pt100 {
+        grid-row-gap: 1em;
+        padding-top: 30px;
+    }
+    .loginsta {
+        height: 30px;
+        width: 30px;
+        background-size: cover;
+    }
+}
