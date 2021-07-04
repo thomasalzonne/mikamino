@@ -18,7 +18,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
 get_header( 'shop' ); ?>
 <div class="mainnav grid animnav boutique">
     <?= wp_nav_menu('mainnav') ?>
