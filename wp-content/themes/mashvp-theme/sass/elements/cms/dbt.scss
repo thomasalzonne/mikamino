@@ -1,0 +1,32 @@
+.dbtC {
+    margin-bottom: 200px;
+}
+.dbttl {
+    grid-column: 2/span 4;
+}
+.dbttr {
+    grid-column: 8/span 4;
+}
+.dbttlbtnC, .dbttrbtnC {
+    display: flex;
+    margin-top: 30px;
+}
+a.dbttlbtn,a.dbttrbtn {
+    text-decoration: none;
+    margin-left: auto;
+    background-color: white;
+    width: 170px;
+    height: 70px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 70px;
+    color: #565656;
+}
+@media screen and (max-width: 1040px){
+    .dbttr {
+        grid-column: 7/span 6;
+    }
+    .dbttl {
+        grid-column: 1/span 6;
+    }
+}

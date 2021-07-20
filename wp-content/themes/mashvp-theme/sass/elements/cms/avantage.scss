@@ -1,0 +1,59 @@
+.avtitle {
+    grid-row: 1;
+    grid-column: 2/span 4;
+    font-size: 24px;
+    line-height: 31px;
+    color: #565656;
+}
+.avantages {
+    grid-row: 2;
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.avantage{
+    grid-column: span 2;
+}
+.avicon {
+    width: 50%;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 100px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tacenter{
+    text-align: center;
+}
+.avtitle.tacenter {
+    margin-top: 10px;
+}
+@media screen and (max-width: 1040px){
+    .avantage {
+        grid-column: span 4;
+    }
+    .avicon {
+        height: 230px;
+    }
+    .avtitle.tacenter {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .avantages{
+        display: flow-root;
+    }
+    .avantage {
+        margin-bottom: 100px;
+    }
+    .avicon {
+        height: 300px;
+    }
+    .avtitle.tacenter {
+        margin-top: 40px;
+    }
+}

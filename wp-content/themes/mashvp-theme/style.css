@@ -2706,5 +2706,283 @@ a.main.btn.wfc.mt20, a.btn.wfc.mt20 {
     flex-direction: column;
   }
 }
+.citationC {
+  margin: 200px 0;
+}
+
+.cita {
+  grid-column: 4/span 6;
+  font-size: 20px;
+  font-family: "Rasmus Italic";
+  line-height: 27px;
+  color: #565656;
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .cita {
+    grid-column: 3/span 8;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .boutiquetext {
+    grid-column: 2/span 9;
+  }
+}
+.blt {
+  grid-column: 2/span 4;
+  margin-bottom: 200px;
+}
+
+.blttitle {
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 30px;
+  color: #565656;
+}
+
+.blttext {
+  line-height: 21px;
+  color: #565656;
+}
+
+@media screen and (max-width: 1040px) {
+  .blt {
+    grid-column: 2/span 6;
+  }
+}
+.btiC {
+  margin-bottom: 200px;
+}
+
+.bti {
+  grid-column: 3/span 9;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+}
+
+.btitext {
+  grid-column: 1/span 4;
+  height: fit-content;
+  margin: auto;
+}
+
+.btiimg {
+  grid-column: 6/span 4;
+  border-radius: 30px;
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.btititle {
+  font-size: 24px;
+  line-height: 31px;
+  color: #565656;
+  margin-bottom: 30px;
+}
+
+.btidesc {
+  font-size: 16px;
+  line-height: 21px;
+  color: #565656;
+}
+
+a.btibtn {
+  text-decoration: none;
+  margin-left: auto;
+  background-color: white;
+  width: 170px;
+  height: 70px;
+  border-radius: 35px;
+  text-align: center;
+  line-height: 70px;
+  color: #565656;
+  margin-top: 30px;
+}
+
+.btibtnC {
+  display: flex;
+}
+
+@media screen and (max-width: 1040px) {
+  .bti {
+    grid-column: 1/span 12;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .btitext {
+    grid-column: 1/span 6;
+  }
+
+  .btiimg {
+    grid-column: 7/span 6;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bti {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bit {
+  grid-column: 2/span 9;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+}
+
+.bitimg {
+  grid-column: 1/span 4;
+  min-height: 600px;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+.bittext {
+  grid-column: 6/span 4;
+  height: fit-content;
+  margin: auto;
+}
+
+@media screen and (max-width: 1040px) {
+  .bit {
+    grid-column: 1/span 12;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .bittext {
+    grid-column: 7/span 6;
+  }
+
+  .bitimg {
+    grid-column: 1/span 6;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bit {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.dbtC {
+  margin-bottom: 200px;
+}
+
+.dbttl {
+  grid-column: 2/span 4;
+}
+
+.dbttr {
+  grid-column: 8/span 4;
+}
+
+.dbttlbtnC, .dbttrbtnC {
+  display: flex;
+  margin-top: 30px;
+}
+
+a.dbttlbtn, a.dbttrbtn {
+  text-decoration: none;
+  margin-left: auto;
+  background-color: white;
+  width: 170px;
+  height: 70px;
+  border-radius: 35px;
+  text-align: center;
+  line-height: 70px;
+  color: #565656;
+}
+
+@media screen and (max-width: 1040px) {
+  .dbttr {
+    grid-column: 7/span 6;
+  }
+
+  .dbttl {
+    grid-column: 1/span 6;
+  }
+}
+.ifull {
+  min-height: 740px;
+  margin-bottom: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.avtitle {
+  grid-row: 1;
+  grid-column: 2/span 4;
+  font-size: 24px;
+  line-height: 31px;
+  color: #565656;
+}
+
+.avantages {
+  grid-row: 2;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+}
+
+.avantage {
+  grid-column: span 2;
+}
+
+.avicon {
+  width: 50%;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 100px;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tacenter {
+  text-align: center;
+}
+
+.avtitle.tacenter {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1040px) {
+  .avantage {
+    grid-column: span 4;
+  }
+
+  .avicon {
+    height: 230px;
+  }
+
+  .avtitle.tacenter {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .avantages {
+    display: flow-root;
+  }
+
+  .avantage {
+    margin-bottom: 100px;
+  }
+
+  .avicon {
+    height: 300px;
+  }
+
+  .avtitle.tacenter {
+    margin-top: 40px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

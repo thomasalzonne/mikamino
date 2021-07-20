@@ -1,0 +1,66 @@
+.btiC{
+    margin-bottom: 200px;
+}
+.bti {
+    grid-column: 3/span 9;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.btitext {
+    grid-column: 1/span 4;
+    height: fit-content;
+    margin: auto;
+}
+.btiimg {
+    grid-column: 6/span 4;
+    border-radius: 30px;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.btititle {
+    font-size: 24px;
+    line-height: 31px;
+    color: #565656;
+    margin-bottom: 30px;
+}
+.btidesc {
+    font-size: 16px;
+    line-height: 21px;
+    color: #565656;
+}
+a.btibtn {
+    text-decoration: none;
+    margin-left: auto;
+    background-color: white;
+    width: 170px;
+    height: 70px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 70px;
+    color: #565656;
+    margin-top: 30px;
+}
+.btibtnC {
+    display: flex;
+}
+@media screen and (max-width: 1040px){
+    .bti {
+        grid-column: 1/span 12;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .btitext {
+        grid-column: 1/span 6;
+    }
+    .btiimg {
+        grid-column: 7/span 6;
+    }
+}
+@media screen and (max-width: 800px){
+    .bti {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,21 @@
+.citationC{
+    margin: 200px 0;
+}
+.cita{
+    grid-column: 4/span 6;
+    font-size: 20px;
+    font-family: 'Rasmus Italic';
+    line-height: 27px;
+    color: #565656;
+    text-align: center;
+}
+@media screen and (max-width: 1440px){
+    .cita {
+        grid-column: 3/span 8;
+    }
+}
+@media screen and (max-width: 1440px){
+    .boutiquetext{
+        grid-column: 2/span 9;
+    }
+}

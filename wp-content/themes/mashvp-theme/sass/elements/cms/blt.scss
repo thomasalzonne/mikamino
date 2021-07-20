@@ -1,0 +1,19 @@
+.blt {
+    grid-column: 2/span 4;
+    margin-bottom: 200px;
+}
+.blttitle {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 30px;
+    color: #565656;
+}
+.blttext {
+    line-height: 21px;
+    color: #565656;
+}
+@media screen and (max-width: 1040px){
+    .blt {
+        grid-column: 2/span 6;
+    }
+}
