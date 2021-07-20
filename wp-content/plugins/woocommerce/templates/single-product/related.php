@@ -21,14 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+	<section class="related products grid12">
 
 		<?php
 		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
+			<h2 class="relatedtitle">Vous pourriez aimer...</h2>
 		<?php endif; ?>
 		
 		<?php woocommerce_product_loop_start(); ?>

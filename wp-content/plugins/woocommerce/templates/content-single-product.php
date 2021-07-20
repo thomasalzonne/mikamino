@@ -47,16 +47,19 @@ if ( post_password_required() ) {
 		?>
 		<?php woocommerce_breadcrumb(); ?>
 		<img class="mainpicture" src="<?= $first_image_url ?>">
-		<?php
-		/**
-		 * Hook: woocommerce_before_single_product_summary.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-		?>
-
+		<div class="big100">
+			<div class="productdesc grid12 wi90 ma">
+				<?php
+				/**
+				 * Hook: woocommerce_before_single_product_summary.
+				 *
+				 * @hooked woocommerce_show_product_sale_flash - 10
+				 * @hooked woocommerce_show_product_images - 20
+				 */
+				do_action( 'woocommerce_before_single_product_summary' );
+				?>
+			</div>
+		</div>
 		<div class="summary entry-summary grid4">
 			<img class="prodicon" src="<?= get_field('icone')['url'] ?>">
 			<?php

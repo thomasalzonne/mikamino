@@ -1,6 +1,9 @@
+<?php
+global $woocommerce;
+?>
 <div class="mainnav grid animnav boutique">
     <?= wp_nav_menu('mainnav') ?>
-    <div class="logoC">
+    <div class="logoC" onclick="window.location.href = '/'">
         <img class="logoboutique" src="<?= get_home_url() ?>/wp-content/themes/mashvp-theme/assets/img/logob.png"  alt="" >
     </div>
     <div class="profil">
@@ -11,6 +14,9 @@
             </div>
             <div class="panier">
                 Panier
+                <div class="itemincart">
+                    <?= $woocommerce->cart->cart_contents_count; ?>
+                </div>
             </div>
         </div>
     </div>
@@ -26,7 +32,7 @@
             <div class="paniermob">
                 Panier
                 <div class="itemincart">
-                    0
+                    <?= $woocommerce->cart->cart_contents_count; ?>
                 </div>
             </div>
         </div>

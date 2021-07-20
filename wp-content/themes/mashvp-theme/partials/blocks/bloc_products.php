@@ -1,9 +1,9 @@
 <div class="products">
     <div class="grid12 wi90 ma">
-        <div class="producttext">
-            <div class="df m50">
+        <div class="producttext mobmt50">
+            <div class="df m40">
                 <div class="producttitle"> <?= get_sub_field('title') ?></div>
-                <a class="btn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+                <a class="btn prod" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
             </div>
             <div class="description">
                 <?= get_sub_field('description') ?>

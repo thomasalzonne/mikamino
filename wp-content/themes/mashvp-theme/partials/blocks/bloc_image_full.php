@@ -1,0 +1,1 @@
+<div class="imgfullC" style="background-image: url('<?= get_sub_field('image')['url'] ?>')"></div>

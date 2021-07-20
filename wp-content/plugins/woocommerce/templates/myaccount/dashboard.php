@@ -69,7 +69,7 @@ $allowed_html = array(
 	 *
 	 * @deprecated 2.6.0
 	 */
-	do_action( 'woocommerce_before_my_account' );
+	// do_action( 'woocommerce_before_my_account' );
 
 	/**
 	 * Deprecated woocommerce_after_my_account action.

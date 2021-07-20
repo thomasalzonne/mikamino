@@ -1,0 +1,43 @@
+.panierC {
+    width: 90%;
+    max-width: 1520px;
+    margin: 50px auto;
+}
+.panierC img {
+    width: 150px !important;
+    height: 150px !important;
+}
+.panierC bdi {
+    margin: auto;
+    flex-direction: unset;
+}
+.panierC input {
+    border: none;
+    background-color: #FBF8E8;
+}
+.panierC input#coupon_code {
+    width: 150px;
+}
+.panierC a.checkout-button.button.alt.wc-forward {
+    background-color: #7C96B7;
+    border-radius: 30px;
+}
+textarea#order_comments{
+    background-color: #FBF8E8;
+}
+div#payment {
+    background: #FBF8E8;
+}
+.panierC .quantity input{
+    padding: 0;
+}
+button#place_order {
+    margin-top: 20px;
+    background-color: #7C96B7;
+}
+@media screen and (max-width : 800px) {
+    .commander form.checkout.woocommerce-checkout {
+        display: flex;
+        flex-direction: column;
+    }
+}

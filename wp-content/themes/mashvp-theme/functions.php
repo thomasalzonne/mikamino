@@ -34,6 +34,7 @@ function mytheme_add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
+
 // add_action( 'woocommerce_after_shop_loop_item_title', 'mashvp__blabla', 10 );
 // function mashvp__blabla() {
 //   echo '<h2>TEST</h2>';

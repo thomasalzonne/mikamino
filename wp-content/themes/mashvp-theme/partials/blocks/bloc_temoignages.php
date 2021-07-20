@@ -2,7 +2,7 @@
 <div class="reviews">
     <div class="grid12 wi90 ma pt440 pb120">
         <?php if(have_rows('reviews')): ?>
-            <div class="grid12 full h80">
+            <div class="grid12 full h80 mb30">
                 <div class="reviewstitle"><?= $title ?></div>
                 <div class="arrow">
                     <span class="arrowleftz" id="prev">Précédent</span>

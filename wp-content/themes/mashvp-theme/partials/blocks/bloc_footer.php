@@ -54,6 +54,9 @@
                         <?php endif; ?>
                         <img class="footerlogo" src="<?= get_home_url() ?>/wp-content/themes/mashvp-theme/assets/img/logo.png"  alt="" >
                     </div>
+                    <div class="newsletter">
+                        <?= do_shortcode('[sibwp_form id=2]')?>
+                    </div>
                     <?php if(have_rows('footer-menu')): ?>
                         <div class="legals grid6nogrg">
                             <?php while(have_rows('footer-menu')): the_row() ?>
@@ -81,5 +84,13 @@
             var size = $(el).width()
             el.style.height = size + "px"
         })
+    }
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
     }
 </script>

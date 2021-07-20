@@ -27,6 +27,12 @@ li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
     display: block;
     text-decoration: none !important;
 }
+.infoproduct span.price {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+    justify-content: flex-end;
+}
 span.price {
     display: flex;
     flex-direction: row-reverse;
@@ -54,6 +60,17 @@ bdi {
     flex-direction: row-reverse;
     margin-left: 5px;
 }
+ul.products.columns-3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+    width: 90%;
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px ;
+}
 @media screen and (max-width: 1040px) {
     li.product {
         grid-column: span 6;
@@ -66,5 +83,9 @@ bdi {
     }
     .wi90.grid12.mxauto{
         display: flex;
+    }
+    ul.products.columns-3 {
+        display: flex;
+        flex-direction: column;
     }
 }

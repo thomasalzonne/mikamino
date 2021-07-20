@@ -1,6 +1,9 @@
+<?php
+global $woocommerce;
+?>
 <div class="mainnav grid">
     <?= wp_nav_menu('mainnav') ?>
-    <div class="logo">
+    <div class="logo" onclick="window.location.href = '/'">
         <img class="log" src="<?= get_home_url() ?>/wp-content/themes/mashvp-theme/assets/img/logo.png"  alt="" >
         <img class="logob" src="<?= get_home_url() ?>/wp-content/themes/mashvp-theme/assets/img/logob.png"  alt="" >
     </div>
@@ -12,6 +15,9 @@
             </div>
             <div class="panier">
                 Panier
+                <div class="itemincart">
+                    <?= $woocommerce->cart->cart_contents_count; ?>
+                </div>
             </div>
         </div>
     </div>
@@ -27,7 +33,7 @@
             <div class="paniermob">
                 Panier
                 <div class="itemincart">
-                    0
+                    <?= $woocommerce->cart->cart_contents_count; ?>
                 </div>
             </div>
         </div>
@@ -98,7 +104,7 @@
                 logob.classList.add("animlogob")
                 setTimeout(() => { 
                     if(window.scrollY >= 900){
-                    logo.style.borderBottom = "1px solid black"
+                    logo.classList.add("animlogo")
                     }
                 }, 1000);
             }
@@ -113,7 +119,7 @@
                 var log = document.querySelector('.log')
                 var logob = document.querySelector('.logob')
 
-                logo.style.borderBottom = "unset"
+                logo.style.borderBottom = "1px solid rgba(0,0,0,0)"
                 nav.classList.remove("animnav")
                 Array.from(a).map(el => el.style.color = "white")
                 panier.style.color = "white"
@@ -123,6 +129,7 @@
                 log.style.opacity = "1"
                 logob.style.opacity = "0"
                 logob.classList.remove("animlogob")
+                logo.classList.remove("animlogo")
             }
         })
     }
@@ -145,4 +152,19 @@
             x.style.display = "block";
         }
     }
+    document.addEventListener('scroll', function(e) {
+        var slides = document.querySelectorAll('.swiper-slide.swiper-slide-active')
+        var scroll = window.scrollY;
+        var height = window.innerHeight
+        var scale = (scroll / height) / 5
+        scale = scale + 1
+        
+        var slide = document.querySelectorAll('.swiper-slide')
+        Array.from(slide).map(el => {
+            el.style.transform = "scale(1)"
+        })
+        Array.from(slides).map(el => {
+            el.style.transform = "scale("+ scale + ")"
+        })
+    })
 </script>

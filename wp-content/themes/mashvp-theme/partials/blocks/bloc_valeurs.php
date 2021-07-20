@@ -1,9 +1,9 @@
 <div class="valeurs">
-    <div class="grid12 wi90 ma val">
+    <div class="grid12 wi90 ma val nogrg">
         <div class="valeurstitle"><?= get_sub_field('title') ?></div>
         <?php if(have_rows('valeur_1')): ?>
             <?php while(have_rows('valeur_1')): the_row() ?>
-                <div class="valeur v1 rellax" data-rellax-speed="-1" style="background-image: url('<?= get_sub_field('image') ?>')">
+                <div class="valeur v1 rellax" data-rellax-speed="-0.5" style="background-image: url('<?= get_sub_field('image') ?>')">
                 </div>
                 <div class="valeurtextcontainer e1">
                     <div class="valeurtextcontent">
@@ -16,7 +16,7 @@
         <?php endif; ?>
         <?php if(have_rows('valeur_2')): ?>
             <?php while(have_rows('valeur_2')): the_row() ?>
-                <div class="valeur v2 rellax" data-rellax-speed="-1.5" style="background-image: url('<?= get_sub_field('image') ?>')">
+                <div class="valeur v2 rellax" data-rellax-speed="-1" style="background-image: url('<?= get_sub_field('image') ?>')">
                 </div>
                 <div class="valeurtextcontainer e2">
                     <div class="valeurtextcontent">
@@ -29,7 +29,7 @@
         <?php endif; ?>
         <?php if(have_rows('valeur_3')): ?>
             <?php while(have_rows('valeur_3')): the_row() ?>
-                <div class="valeur v3 rellax" data-rellax-speed="-2" style="background-image: url('<?= get_sub_field('image')['url'] ?>')">
+                <div class="valeur v3 rellax" data-rellax-speed="-1.5" style="background-image: url('<?= get_sub_field('image')['url'] ?>')">
                     
                 </div>
                 <div class="valeurtextcontainer e3">

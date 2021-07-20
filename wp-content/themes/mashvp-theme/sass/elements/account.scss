@@ -1,0 +1,88 @@
+.account .woocommerce {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    max-width: 1520px;
+}
+.account.moncompte {
+    min-height: 500px;
+    display: flex;
+}
+nav.woocommerce-MyAccount-navigation {
+    margin-right: 100px;
+    height: 200px;
+}
+.woocommerce-MyAccount-navigation-link a {
+    text-decoration: none;
+}
+.woocommerce-MyAccount-navigation ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.woocommerce-address-fields__field-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.woocommerce-address-fields__field-wrapper p {
+    grid-column: span 2;
+    width: 100% !important;
+}
+.woocommerce-address-fields__field-wrapper input {
+    border: none;
+    background-color: #FBF8E8;
+    border-bottom: 1px solid;
+    height: 40px;
+}
+.woocommerce-MyAccount-content {
+    width: 100%;
+}
+span.select2-selection.select2-selection--single {
+    height: 40px;
+    border: none;
+    background-color: #FBF8E8;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+span.select2-search.select2-search--dropdown {
+    background-color: #FBF8E8;
+}
+span.select2-results {
+    background-color: #FBF8E8;
+}
+.formaccount button.button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+form.formaccount {
+    margin-top: 40px;
+}
+form.woocommerce-EditAccountForm.edit-account input {
+    border: none;
+    background-color: #FBF8E8;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+form.woocommerce-EditAccountForm.edit-account fieldset {
+    border: none;
+    padding: 0;
+}
+@media screen and (max-width: 450px) {
+    .account .woocommerce{
+        flex-direction: column;
+    }
+    nav.woocommerce-MyAccount-navigation{
+        margin-bottom: 50px;
+    }    
+    .formaccount .woocommerce-address-fields__field-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .formaccount button.button {
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+}

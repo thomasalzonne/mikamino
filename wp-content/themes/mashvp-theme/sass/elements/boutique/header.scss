@@ -56,3 +56,13 @@ nav.woocommerce-breadcrumb {
 main nav.woocommerce-breadcrumb{
     display: none;
 }
+@media screen and (max-width: 800px){
+    .headerboutique a.headerbtn {
+        grid-column: 9/span 4;
+    }
+}
+@media screen and (max-width: 450px) {
+    .headerboutique .wi90.grid12.mxauto.hfull.mta {
+        flex-direction: column;
+    }
+}

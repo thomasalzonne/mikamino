@@ -1,0 +1,66 @@
+.newC.pt100 {
+    background-color: #B89370;
+}
+.newarticle nav.woocommerce-breadcrumb {
+    display: block;
+    margin-bottom: unset;
+    color: white;
+    margin-top: 30px;
+}
+.actutitle {
+    grid-row: 2;
+    grid-column: 2/span 7;
+    font-size: 50px;
+    line-height: 65px;
+    color: #FBF8E8;
+}
+.mainactu {
+    grid-row: 3;
+    grid-column: 2/span 9;
+    padding-bottom: 80px;
+}
+.grid9{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.mainactuimg {
+    grid-column: 1/span 6;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    min-height: 480px;
+}
+.mainpostcontainer {
+    grid-column: 7/span 3;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 60px;
+}
+.mainarticletitle {
+    font-size: 24px;
+    line-height: 31px;
+    color: #FBF8E8;
+    width: 50%;
+}
+.mainarticlecateg {
+    margin: 20px 0;
+    color: #FBF8E8;
+    font-size: 12px;
+    line-height: 16px;
+}
+.mainpostdesc {
+    color: #FBF8E8;
+    line-height: 21px;
+}
+.mainbottom {
+    display: flex;
+    margin-top: 20px;
+}
+a.main.btn.wfc.mt20, a.btn.wfc.mt20 {
+    color: #B89370;
+}
+.newarticle nav.woocommerce-breadcrumb a {
+    color: white;
+}

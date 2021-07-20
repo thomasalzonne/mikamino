@@ -26,7 +26,7 @@ define( 'DB_NAME', 'mikamino' );
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'toor' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -41,8 +41,6 @@ if ( !defined('WP_CLI') ) {
     define( 'WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
     define( 'WP_HOME',    $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
 }
-
-
 
 /**#@+
  * Authentication Unique Keys and Salts.

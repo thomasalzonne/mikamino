@@ -83,7 +83,30 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
+<script>
+var imgs = document.querySelectorAll('.woocommerce-product-gallery__image img')
+Array.from(imgs).map(el => {
+    var size = el.width
+    el.style.height = size +"px"
+    el.removeAttribute("sizes")
+})
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+</script>
 <?php
 get_footer( 'shop' );
 

@@ -1,0 +1,67 @@
+.postcard {
+    grid-column: span 6;
+}
+.actuimg {
+    grid-column: span 3;
+    min-height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+.postcontainer {
+    grid-column: span 3;
+    color: #565656;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+.articletitle {
+    font-size: 24px;
+    line-height: 31px;
+}
+.articlecateg {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 20px 0;
+}
+.postdesc {
+    line-height: 21px;
+}
+.bottom {
+    display: flex;
+    margin-top: 20px;
+}
+.postgrid.grid12.wi90.ma {
+    margin-bottom: 60px;
+}
+.mt60{
+    margin-top: 60px;
+}
+.pagination {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+    width: 90%;
+    max-width: 1520px;
+    margin: auto;
+}
+@media screen and (max-width: 800px) {
+    .newarticle nav.woocommerce-breadcrumb {
+        order: 1;
+    }
+    .actutitle {
+        order: 2;
+    }
+    .mainactu.grid9 {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    .postcard.grid6 {
+        display: flex;
+        flex-direction: column;
+    }
+}

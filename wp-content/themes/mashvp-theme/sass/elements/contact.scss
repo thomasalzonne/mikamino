@@ -1,0 +1,139 @@
+.mt100{
+    margin-top: 100px;
+}
+.contactC{
+    background-color: #FBF8E8;
+}
+.contact nav.woocommerce-breadcrumb {
+    display: block;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    order: unset;
+}
+.contacttitle {
+    grid-row: 2;
+    grid-column: 2/span 7;
+    font-size: 50px;
+    line-height: 65px;
+    color: #565656;
+}
+.contacttext {
+    grid-row: 2;
+    grid-column: 9/span 2;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: auto;
+    color: #565656;
+}
+.contactform {
+    grid-column: 2/Span 6;
+    grid-row: 3;
+}
+.contactimg {
+    grid-column: 9/span 4;
+    grid-row: 3;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+}
+.pb80{
+    padding-bottom: 80px;
+}
+.contactform form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+}
+.mvpf.mvpf__form-row {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.mvpf.mvpf__form-field {
+    grid-column: span 3;
+}
+.mvpf.mvpf__form-field input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #FBF8E8;
+    border-bottom: 1px solid black;
+}
+.contactselect select {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #FBF8E8;
+    border-bottom: 1px solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 30px;
+}
+.contactmsg textarea {
+    width: 100%;
+    min-height: 160px;
+    padding: 20px;
+    background-color: #FBF8E8;
+}
+.contactmsgtxt p.message {
+    font-size: 10px;
+    line-height: 13px;
+    color: #565656;
+}
+.contactcheckbox input {
+    height: 10px !important;
+    width: 10px !important;
+}
+label.mvpf__form-field--select.contactselect {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+label.mvpf__form-field--select.contactselect::after{
+    content: '\0025BC';
+    font: normal normal normal 12px/1 FontAwesome;
+    color: black;
+    left: 0px;
+    top: 4px;
+    height: 26px;
+    padding: 15px 0px 0px 0px;
+    position: absolute;
+    pointer-events: none;
+}
+label.mvpf__form-field--submit.contactbtn {
+    width: 140px;
+    margin-left: auto;
+}
+.contactbtn input {
+    background-color: white !important;
+    border-bottom: none !important;
+    border-radius: 35px;
+    height: 70px !important;
+}
+.msgsend p.message {
+    font-size: 10px;
+    line-height: 13px;
+    color: #B85548;
+    text-align: right;
+}
+@media screen and (max-width: 800px) {
+    .mt100{
+        margin-top: unset;
+    }
+    .contactC{
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .mvpf.mvpf__form-row{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 1em;
+    }
+}
