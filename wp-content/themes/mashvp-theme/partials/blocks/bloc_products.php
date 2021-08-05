@@ -27,6 +27,20 @@
                 <?php endif; ?>
             </div>
         <?php endif; ?>
+        <?php if (get_sub_field('1or2') == "one"): ?>
+            <div class="imgC grid8">
+                <?php if(have_rows('produit')): ?>
+                    <?php while(have_rows('produit')): the_row() ?>
+                        <?php if(get_sub_field('big_picture')): ?>
+                            <div class="bigpic rellax" data-rellax-speed="-2" style="background-image: url('<?= get_sub_field('big_picture') ?>')" onclick="window.location.href = '/mikamino/boutique'"></div>
+                        <?php endif; ?>
+                        <?php if(get_sub_field('lil_picture')): ?>
+                            <div class="lilpic rellax" data-rellax-speed="3" style="background-image: url('<?= get_sub_field('lil_picture') ?>')"></div>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

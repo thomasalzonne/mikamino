@@ -65,6 +65,23 @@ a.img2 {
     height: fit-content;
     margin-top: auto;
 }
+.bigpic {
+    grid-column: 1/span 5;
+    height: 840px;
+    z-index: 1;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+}
+.lilpic {
+    grid-column: 6/span 3;
+    height: 400px;
+    z-index: 1;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    margin-top: auto;
+}
 a.btn {
     background-color: white;
     text-decoration: none;

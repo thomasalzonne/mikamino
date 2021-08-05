@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ferjul17/sellsy-api": "^1.0",
+        "teknoo/sellsy-client": "^2.0"
+    }
+}

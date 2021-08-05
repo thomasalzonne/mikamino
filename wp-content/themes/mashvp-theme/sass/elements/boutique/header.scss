@@ -40,7 +40,7 @@
     margin-bottom: 10px;
 }
 nav.woocommerce-breadcrumb {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 13px;
     color: #FBF8E8;
     grid-row: 1;
@@ -53,8 +53,21 @@ nav.woocommerce-breadcrumb {
     color: #565656;
     margin-top: 10px;
 }
+.wi90.grid12.mxauto .boutiquetext {
+    grid-column: 2/span 4;
+}
 main nav.woocommerce-breadcrumb{
     display: none;
+}
+.scrollbot {
+    grid-column: 11;
+    height: fit-content;
+    margin-top: 90px;
+}
+@media screen and (max-width: 1040px) {
+    .wi90.grid12.mxauto .boutiquetext {
+        grid-column: 2/span 9;
+    }
 }
 @media screen and (max-width: 800px){
     .headerboutique a.headerbtn {

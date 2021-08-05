@@ -9,6 +9,10 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+require get_template_directory().'/vendor/autoload.php';
+use SellsyApi\Client;
+
+global $client;
 
 /**
  * Prevent any user who cannot 'edit_posts' (subscribers, customers etc) from seeing the admin bar.
@@ -83,6 +87,21 @@ if ( ! function_exists( 'wc_create_new_customer' ) ) {
 			return $errors;
 		}
 
+
+		if ( isset( $_POST['billing_first_name'] ) ) {
+			$firstname = sanitize_text_field( $_POST['billing_first_name'] );
+			// update_user_meta( $customer_id, 'first_name',  );
+			// First name field which is used in WooCommerce
+			// update_user_meta( $customer_id, 'billing_first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+		}
+		if ( isset( $_POST['billing_last_name'] ) ) {
+				// Last name field which is by default
+				$lastname = sanitize_text_field( $_POST['billing_last_name'] );
+				// update_user_meta( $customer_id, 'last_name',  );
+				// Last name field which is used in WooCommerce
+				// update_user_meta( $customer_id, 'billing_last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
+		}
+
 		$new_customer_data = apply_filters(
 			'woocommerce_new_customer_data',
 			array_merge(
@@ -92,10 +111,24 @@ if ( ! function_exists( 'wc_create_new_customer' ) ) {
 					'user_pass'  => $password,
 					'user_email' => $email,
 					'role'       => 'customer',
+					'first_name' => $firstname,
+					'billing_first_name' => $firstname,
+					'last_name' => $lastname,
+					'billing_last_name' => $lastname,
 				)
 			)
 		);
-
+		$userToken = '216bbd3bd1ea06a408083ac464746c86eb2cd5c7';
+		$userSecret = 'c2db9dbc132e885afdcbb14e5cd0e20e7c233411';
+		$consumerKey = '3b946aebe219c9423dd575a6baed2448bc35cbf0';
+		$consumerSecret = '1115687d3ef59e73a2af09fcc36a6cd59bea9f18';
+		$client = new Client(['userToken'      => $userToken, 'userSecret'     => $userSecret,
+							'consumerToken'  => $consumerKey, 'consumerSecret' => $consumerSecret,
+							]);
+		$service = $client->getService('Client');
+		$service->call('create', ['third' => ['name' => $firstname,'type' => 'person', 'email' => $email],
+		'contact' => ['name' => $lastname,'forename' => $firstname, 'email' => $email]
+		]);
 		$customer_id = wp_insert_user( $new_customer_data );
 
 		if ( is_wp_error( $customer_id ) ) {

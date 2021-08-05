@@ -61,9 +61,22 @@ p.headertext {
     width: fit-content;
     position: absolute;
     color: #FBF8E8;
-    bottom: 25%;
+    bottom: 23%;
     font-size: 60px;
     line-height: 78px;
+    max-width: 30%;
+}
+a.headersliderbtn {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    bottom: 15%;
+    background-color: #FBF8E8;
+    width: 170px;
+    text-align: center;
+    height: 70px;
+    border-radius: 35px;
+    line-height: 70px;
 }
 .mainnav {
     position: fixed;
@@ -71,8 +84,7 @@ p.headertext {
     width: 100%;
     background: linear-gradient(
         180deg
-        , #000000 0%, rgba(0,0,0,0) 100%);
-    opacity: 0.5;
+        , #000000 -70%, rgba(0,0,0,0) 100%);
 }
 .profil{
     display: flex;
@@ -103,6 +115,8 @@ ul#menu-mainnav li {
     width: 90px;
     margin-top: 50px;
     position: absolute;
+    min-width: 45px;
+    max-width: 90px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -113,8 +127,12 @@ ul#menu-mainnav li {
     display: flex;
 }
 .logo {
-    padding: 0 85px;
+    width: 170px;
     position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 125px;
+    display: inline-block;
     cursor: pointer;
 }
 span.swiper-pagination-bullet {
@@ -132,8 +150,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin: auto 0;
     margin-right: 15px;
 }
+video#myVideo {
+    width: 100%;
+}
 .panier, .compte {
     margin: 0 25px;
+    cursor: pointer;
+}
+img.logoboutique {
+    cursor: pointer;
 }
 .animnav{
     height: 100px;
@@ -149,13 +174,28 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     opacity: 0;
 }
 .animlogo{
-    border-bottom: 1px solid rgba(0,0,0,1) !important;
-    transition-duration: 2s;
+    transition-duration: 1s;
+}
+.logo::after {
+    transition: all ease-in-out 0.1s;
+    background: none repeat scroll 0 0 white;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: -1px;
+}
+.logo.animlogo::after{
+    width: 100%;
+    transition-duration: 1s;
+    background: none repeat scroll 0 0 black;
 }
 .animlogob{
     width: 45px !important;
     margin-top: 0 !important;
     opacity: 1 !important;
+    top: 50% !important;
     transition-property: width, height;
     transition-duration: 1s;
 }

@@ -33,7 +33,7 @@
     if($(window).width() > 800) {
         event = document.querySelectorAll(".review");
         for (let i = 0; i < event.length/2; i++) {
-            $('.showroom').append('<div class="toslide grid12"></div>');
+            $('<div class="toslide grid12"></div>').appendTo('.showroom');
         }
         divevent = document.querySelectorAll(".toslide");
 

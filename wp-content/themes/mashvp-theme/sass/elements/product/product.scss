@@ -18,7 +18,8 @@ div.product.type-product{
     margin-top: 130px;
 }
 nav.woocommerce-breadcrumb a {
-    color: black;
+    color: #565656;
+    text-decoration: none;
 }
 img.mainpicture {
     grid-row: 2;
@@ -28,6 +29,7 @@ img.mainpicture {
     background-size: cover;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
 }
 span.price span.amount bdi{
     margin: 0 5px 0 0;
@@ -73,7 +75,7 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 h1.product_title.entry-title {
     grid-row: 2;
     grid-column: span 4;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 65px;
     color: #565656;
 }
@@ -84,6 +86,16 @@ h1.product_title.entry-title {
 .woocommerce-product-details__short-description {
     grid-row: 5;
     grid-column: span 4;
+}
+p.stock.out-of-stock {
+    grid-row: 3;
+    grid-column: 3/span 2;
+    margin: 20px 0;
+}
+.product .summary p.price{
+    grid-column: 1/span 3;
+    color: #7C96B7;
+    font-size: 20px;
 }
 .produitC form.cart {
     grid-row: 4;
@@ -114,14 +126,18 @@ form.variations_form.cart .woocommerce-variation-add-to-cart button.single_add_t
 img.prodicon {
     grid-row: 1;
     grid-column: 1;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 50px;
 }
 .summary bdi {
     justify-content: flex-end;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+.woocommerce-product-details__short-description ul {
+    list-style: circle;
+    margin-left: 20px;
 }
 .big100 {
     position: relative;
@@ -360,6 +376,32 @@ button.single_add_to_cart_button {
     grid-row: 2;
     grid-column: 1/span 4;
 }
+p.stock.in-stock {
+    display: none;
+}
+.produitC p.stock.out-of-stock {
+    grid-row: unset;
+    grid-column: unset;
+    margin: unset;
+}
+.woocommerce-variation-availability {
+    position: absolute;
+    right: 0;
+    top: -195px;
+    background-color: #7C96B7;
+    color: #FBF8E8;
+    text-align: center;
+    height: 50px;
+    width: 130px;
+    line-height: 50px;
+    border-radius: 25px;
+}
+@media screen and (max-width: 1440px) {
+    .big100{
+        width: 112%;
+        margin-left: -6%;
+    }
+}
 @media screen and (max-width: 1040px) {
     div.product.type-product {
         display: flex;
@@ -373,6 +415,8 @@ button.single_add_to_cart_button {
     }
     .big100 {
         order: 4;
+        width: 200%;
+        margin-left: -50%;
     }
     .summary.entry-summary.grid4 {
         order: 3;

@@ -45,6 +45,7 @@
     
     var msgsend = document.querySelector('.msgsend')
     var msgsendpar = $(msgsend).parent()
-    $(msgsendpar).css("grid-column","3/span 4 !important")
+    console.log(msgsendpar)
+    $(msgsendpar).css("grid-column","4/span 3")
     
 </script>

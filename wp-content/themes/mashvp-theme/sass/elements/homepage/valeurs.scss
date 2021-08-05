@@ -8,6 +8,9 @@
     font-size: 50px;
     line-height: 65px;
 }
+.grid12.wi90.ma.val.nogrg {
+    padding-top: 50px;
+}
 .valeur {
     grid-row: 2;
     grid-column: span 4;
@@ -23,7 +26,7 @@
     height: 90%;
     margin: auto;
     border-radius: 500px;
-    background-color: white;
+    background-color: #FBF8E8;
     width: 90%;
     display: flex;
 }
@@ -41,7 +44,7 @@
     font-size: 24px;
     line-height: 31px;
     color: #565656;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .valeurtext {
     text-align: center;

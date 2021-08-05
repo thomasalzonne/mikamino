@@ -35,6 +35,19 @@ button#place_order {
     margin-top: 20px;
     background-color: #7C96B7;
 }
+tr.woocommerce-cart-form__cart-item.cart_item img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    position: unset;
+}
+.woocommerce-info {
+    width: 90%;
+    max-width: 1520px !important;
+    margin-left: auto !important;
+    border-top-color: #BA9283 !important;
+    margin-right: auto !important;
+}
+.woocommerce-info::before {
+    color: #BA9283 !important;
+}
 @media screen and (max-width : 800px) {
     .commander form.checkout.woocommerce-checkout {
         display: flex;

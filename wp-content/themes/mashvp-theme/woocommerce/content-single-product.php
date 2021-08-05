@@ -53,7 +53,9 @@ if ( post_password_required() ) {
 		}
 		?>
 		<?php woocommerce_breadcrumb(); ?>
-		<img class="mainpicture" src="<?= $product->get_image() ?>">
+		
+		<?= $product->get_image('full', ['class' => 'mainpicture']) ?>
+
 		<div class="big100">
 			<div class="productdesc grid12 wi90 ma">
 				<?php

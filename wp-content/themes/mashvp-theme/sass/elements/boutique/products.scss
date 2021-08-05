@@ -14,8 +14,15 @@ li.product {
     grid-column: span 4;
 }
 img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    position: absolute;
+    top: 0%;
+    left: 0;
     width: 100%;
-    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition-property: width, height,left, top;
+    transition-duration: 0.4s;
 }
 span.onsale {
     display: none;
@@ -27,9 +34,13 @@ li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
     display: block;
     text-decoration: none !important;
 }
+.infoproduct span.price span.amount bdi {
+    font-size: 12px;
+    margin-left: 5px;
+}
 .infoproduct span.price {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
     font-size: 12px;
     justify-content: flex-end;
 }
@@ -44,7 +55,7 @@ span.price {
 .infoproduct img {
     height: 40px;
     width: 40px;
-    margin: 15px;
+    margin: 10px;
 }
 ins{
     text-decoration: none !important;
@@ -52,8 +63,10 @@ ins{
 }
 .nameprice {
     height: fit-content;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 10px 0;
+}
+.infoproduct > * + * {
+    margin-left: 0;
 }
 bdi {
     display: flex;
@@ -70,6 +83,37 @@ ul.products.columns-3 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 170px ;
+}
+.prodimg {
+    position: relative;
+    padding-bottom: calc((400/480) * 100%);
+    background: #7C96B7;
+    border-radius: 20px;
+}
+div#primary .prodimg:hover img{
+    top: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    border-radius: 16px;
+}
+.df.voir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.voirtxt {
+    margin: auto;
+    color: #7C96B7;
+    font-size: 24px;
+    line-height: 31px;
+}
+div#primary .prodimg:hover .df.voir{
+    opacity: 1;
 }
 @media screen and (max-width: 1040px) {
     li.product {

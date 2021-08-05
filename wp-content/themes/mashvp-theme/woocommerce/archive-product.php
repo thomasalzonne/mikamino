@@ -78,11 +78,3 @@ do_action( 'woocommerce_after_main_content' );
 ?>
 
 <?php get_footer() ?>
-
-<script>
-    var images = document.querySelectorAll('img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail')
-    Array.from(images).map(el => {
-        var size = el.width
-        el.style.height = size + "px"
-    })
-</script>

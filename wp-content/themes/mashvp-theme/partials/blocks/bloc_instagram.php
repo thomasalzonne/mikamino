@@ -2,7 +2,7 @@
 $images = get_sub_field('images');
 ?>
 <div class="insta">
-    <div class="grid12 wi90 ma pt100">
+    <div class="grid12 wi90 ma pt100 nogrg">
         <div class="logoinsta">
             <div class="loginsta"></div>
         </div>
