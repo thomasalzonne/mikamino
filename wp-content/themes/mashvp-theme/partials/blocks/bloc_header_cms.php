@@ -49,7 +49,9 @@ global $woocommerce;
             <div class="boutiquetitlecms">
                 <?= get_sub_field('title') ?>
             </div>
-            <a class="headerbtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+            <?php if(get_sub_field('btn_link') && get_sub_field('btn_text')): ?>
+                <a class="headerbtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+            <?php endif; ?>
         </div>
     </div>
     <div class="wi90 grid12 mxauto">

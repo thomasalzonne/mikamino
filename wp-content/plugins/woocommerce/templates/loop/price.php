@@ -20,8 +20,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
+if($product->is_type( 'variable' )){
+	$min_price = $product->get_variation_price( 'min', true );
+	$max_price = $product->get_variation_price( 'max', true );
+}
+else{
+	$min_price = 0;
+	$max_price = 0;
+}
+if($min_price === $max_price){
+	?>
+		<?php if ( $price_html = $product->get_price() ) : ?>
+			<span class="price"><?php echo $product->get_price(); ?>€</span>
+		<?php endif; ?>
+<?php
+}else{
+	?>
+		<?php if ( $price_html = $product->get_price() ) : ?>
+			<span class="price">A partir de <?php echo $product->get_price(); ?>€</span>
+		<?php endif; ?>
+	<?php
+}
 ?>
-
-<?php if ( $price_html = $product->get_price() ) : ?>
-	<span class="price">A partir de <?php echo ($price_html . " €"); ?></span>
-<?php endif; ?>

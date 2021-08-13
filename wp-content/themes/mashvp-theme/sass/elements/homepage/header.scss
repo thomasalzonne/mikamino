@@ -62,9 +62,27 @@ p.headertext {
     position: absolute;
     color: #FBF8E8;
     bottom: 23%;
-    font-size: 60px;
     line-height: 78px;
     max-width: 30%;
+}
+ul.sub-menu {
+    display: none;
+}
+ul.sub-menu{
+    width: 100%;
+    bottom: -207px;
+    position: absolute;
+    padding: 52px 0;
+    left: 0;
+    background-color: #FBF8E8;
+    border-bottom: 1px solid black;
+}
+li.submenu:hover ul.sub-menu{
+    display: block;
+}
+.menu-mainnav-container ul#menu-mainnav .submenu li {
+    width: fit-content;
+    margin-left: 8%;
 }
 a.headersliderbtn {
     position: absolute;
@@ -99,13 +117,14 @@ ul#menu-mainnav{
     margin-left: 15px;
 }
 ul#menu-mainnav li {
-    margin: 0 25px;
+    padding: 38px 0;
 }
 .mainnav a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     line-height: 24px;
+    padding: 23px 27px;
 }
 .compte img {
     height: 24px;
@@ -260,6 +279,11 @@ ul#menu-mainnav-1 li {
 #menu-mainnav-1 a {
     text-decoration: none;
 }
+@media screen and (max-width: 1440px){
+    p.headertext{
+        max-width: 40%;
+    }
+}
 @media screen and (max-width: 800px){
     .producttext.mobmt50{
         margin-top: 50px;
@@ -277,10 +301,21 @@ ul#menu-mainnav-1 li {
         display: grid;
     }
     p.headertext {
-        font-size: 32px;
-        line-height: 42px;
-        bottom: 33%;
-    }  
+        font-size: 32px !important;
+        line-height: 42px !important;
+        bottom: 15%;
+        max-width: 70%;
+    } 
+    a.headersliderbtn{
+        bottom: 5%;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 27% !important;
+    }
+    a.img1.rellax{
+        transform: unset !important;
+        margin-top: unset;
+    }
 }
 @media screen and (max-height: 750px){
     div p.headertext{

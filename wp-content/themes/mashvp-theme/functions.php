@@ -96,6 +96,8 @@ function after_add_to_cart_button_action_callback() {
     <?php
     endif;
 }
+
+	
 // add_action('woocommerce_new_order', function ($order_id) {
 //     $userToken = '216bbd3bd1ea06a408083ac464746c86eb2cd5c7';
 //     $userSecret = 'c2db9dbc132e885afdcbb14e5cd0e20e7c233411';
@@ -126,13 +128,8 @@ function plugin_name_sync_on_product_save( $meta_id, $post_id, $meta_key, $meta_
                                 'consumerToken'  => $consumerKey, 'consumerSecret' => $consumerSecret,
                                 ]);
             $service = $client->getService('Catalogue');
-            if($service->call('create', ['type' => 'item', 'item' => [ 'id' => $post_id, 'name' => 'test', 'tradename' => 'produit', 'unit' => 'kg', 'taxrate' => 20]])){
-                echo "<script>console.log('salut')</script>";
-            }
-            else{
                 $product = wc_get_product( $post_id );
-                echo "<script>console.log(".json_encode($post_id).")</script>";
-            }
+                $service->call('create', ['type' => 'item', 'item' => [ 'id' => $post_id, 'name' => $product->get_title(), 'tradename' => $product->get_title(), 'unit' => 'unité', 'taxrate' => 20, 'purchaseAmount' => $product->get_price(),'unitAmount' => $product->get_price()]]);
         }
     }
 }

@@ -75,9 +75,10 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 h1.product_title.entry-title {
     grid-row: 2;
     grid-column: span 4;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 65px;
     color: #565656;
+    margin-bottom: 20px;
 }
 .summary p.price {
     grid-row: 3;
@@ -97,6 +98,12 @@ p.stock.out-of-stock {
     color: #7C96B7;
     font-size: 20px;
 }
+.produitC .product .summary p.price{
+    font-size: 32px;
+    line-height: 41px;
+    width: fit-content;
+    margin: 0;
+}
 .produitC form.cart {
     grid-row: 4;
     grid-column: span 4;
@@ -104,6 +111,7 @@ p.stock.out-of-stock {
     grid-template-rows: 90px 90px 70px;
     grid-row-gap: 40px;
     position: relative;
+    margin-top: 20px;
 }
 button.single_add_to_cart_button.button.alt {
     width: 100%;
@@ -304,6 +312,11 @@ form.variations_form.cart span.colorselect {
     width: 80px;
     border-radius: 25px;
 }
+.produitC p.oldprice.price {
+    text-decoration: line-through;
+    font-size: 14px !important;
+    margin-top: auto;
+}
 form.variations_form.cart .choices__item.choices__item--selectable {
     display: flex;
     line-height: 45px;
@@ -319,7 +332,10 @@ form.variations_form.cart p.infoselec {
     position: absolute;
     left: 0;
     right: 0;
+    bottom: 0;
     text-align: center;
+    top: 0;
+    line-height: 72px;
 }
 form.variations_form.cart a.reset_variations {
     display: none !important;
@@ -384,7 +400,7 @@ p.stock.in-stock {
     grid-column: unset;
     margin: unset;
 }
-.woocommerce-variation-availability {
+p.stock.out-of-stock {
     position: absolute;
     right: 0;
     top: -195px;

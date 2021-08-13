@@ -68,4 +68,9 @@
             });
         });
     }
+    
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var next = document.querySelector('#next')
+        next.click()
+    });
 </script>

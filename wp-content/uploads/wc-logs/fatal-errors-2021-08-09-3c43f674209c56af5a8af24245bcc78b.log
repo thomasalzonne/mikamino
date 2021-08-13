@@ -1,0 +1,22 @@
+2021-08-09T12:28:01+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_price() in C:\laragon\www\mikamino\wp-content\plugins\woocommerce\templates\loop\price.php:23
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/price.php')
+#2 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(292): woocommerce_template_loop_price('')
+#3 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\laragon\www\mikamino\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\woocommerce\content-product.php(68): do_action('woocommerce_aft...')
+#6 C:\laragon\www\mikamino\wp-includes\template.php(732): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_templa dans C:\laragon\www\mikamino\wp-content\plugins\woocommerce\templates\loop\price.php à la ligne 23
+
+2021-08-09T12:28:57+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_price() in C:\laragon\www\mikamino\wp-content\plugins\woocommerce\templates\loop\price.php:23
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/price.php')
+#2 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(292): woocommerce_template_loop_price('')
+#3 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\laragon\www\mikamino\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\woocommerce\content-product.php(68): do_action('woocommerce_aft...')
+#6 C:\laragon\www\mikamino\wp-includes\template.php(732): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_templa dans C:\laragon\www\mikamino\wp-content\plugins\woocommerce\templates\loop\price.php à la ligne 23
+

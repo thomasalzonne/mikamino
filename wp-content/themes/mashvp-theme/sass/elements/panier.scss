@@ -1,7 +1,32 @@
 .panierC {
     width: 90%;
     max-width: 1520px;
-    margin: 50px auto;
+    margin: 150px auto 50px auto;
+}
+.panierC label.screen-reader-text {
+    display: none;
+}
+.woocommerce ul#shipping_method li {
+    display: flex;
+    margin: 10px 0;
+}
+#packlink-drop-off-picker{
+    margin-top: unset !important;
+}
+.panierC nav.woocommerce-breadcrumb {
+    display: block;
+    margin-bottom: 40px;
+    color: #565656;
+}
+.paniertitle {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 80px;
+    color: #565656;
+}
+.woocommerce tr.woocommerce-shipping-totals.shipping ul#shipping_method li {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .panierC img {
     width: 150px !important;

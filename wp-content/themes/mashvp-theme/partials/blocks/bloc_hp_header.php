@@ -1,6 +1,7 @@
 <?php
 global $woocommerce;
 $bool = get_sub_field('isvideo');
+$fontsize = get_sub_field("font_size")
 ?>
 <div class="mainnav grid">
     <?= wp_nav_menu('mainnav') ?>
@@ -69,7 +70,7 @@ $bool = get_sub_field('isvideo');
             <?php if(have_rows('slide')): ?>
                 <?php while(have_rows('slide')): the_row() ?>
                     <div class="swiper-slide" style="background-image: url('<?= get_sub_field('image')['url'] ?>')">
-                        <p class="headertext" style='opacity: 0'><?= get_sub_field('text') ?></p>
+                        <p class="headertext" style='font-size:<?= $fontsize ?>px; opacity: 0;'><?= get_sub_field('text') ?></p>
                         <?php if(get_sub_field('btn_link') && get_sub_field('btn_text')): ?>
                             <a class="headersliderbtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
                         <?php endif; ?>
@@ -191,6 +192,9 @@ $bool = get_sub_field('isvideo');
     var size = screen.width
     if(size - 1520 > 0){
         a = (size - 1520)/2
+        if(a < 20){
+            a = 20
+        }
         Array.from(txt).map(el => el.style.left = a+"px")
         Array.from(btnsliders).map(el => el.style.left = a+"px")
         swipe.style.left = a+"px";
@@ -243,13 +247,14 @@ $bool = get_sub_field('isvideo');
                 el.style.color = "white"
             })
         }
-
-        var slide = document.querySelectorAll('.swiper-slide')
+        if(screen.width >= 801){
+            var slide = document.querySelectorAll('.swiper-slide')
         Array.from(slide).map(el => {
             el.style.transform = "scale(1)"
         })
         Array.from(slides).map(el => {
             el.style.transform = "scale("+ scale + ")"
         })
+        }
     })
 </script>

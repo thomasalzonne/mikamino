@@ -20,6 +20,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-
+if( $product->is_on_sale() ) {
+	?>
+	<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?> new"><?php echo $product->get_price(); ?>€</p><p class='oldprice <?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>'><?= $product->get_regular_price();?>€<p>
+<?php
+}else{
+	?>
+	<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price(); ?>€</p>
+	<?php
+}
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">À partir de <?php echo $product->get_price(); ?>€</p>
+<script>
+	var oldp = document.querySelector('p.oldprice.price')
+	var psize = document.querySelector('p.price.new')
+	var ml = psize.offsetWidth + 25
+	oldp.style.marginLeft = ml +'px'
+</script>

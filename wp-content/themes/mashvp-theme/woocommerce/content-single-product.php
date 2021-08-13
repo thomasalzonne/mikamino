@@ -95,7 +95,9 @@ if ( post_password_required() ) {
 			</div>
 		</div>
 		<div class="summary entry-summary grid4">
-			<img class="prodicon" src="<?= get_field('icone')['url'] ?>">
+			<?php if(get_field('icone')): ?>
+				<img class="prodicon" src="<?= get_field('icone')['url'] ?>">
+			<?php endif; ?>
 			<?php
 			/**
 			 * Hook: woocommerce_single_product_summary.
@@ -157,7 +159,7 @@ if ( post_password_required() ) {
 								data.placeholder ? classNames.placeholder : ''
 								}" data-item data-id="${data.id}" data-value="${data.value}" ${
 								data.active ? 'aria-selected="true"' : ''
-								} ${data.disabled ? 'aria-disabled="true"' : ''}>
+								} ${data.disabled ? 'aria-disabled="true"' : ''} style="padding-right: 0px !important">
 									<span class="colorselect" style="background-color: ${color}"></span> <p class="infoselec">${data.label}</p>
 								</div>
 								`);
@@ -173,7 +175,7 @@ if ( post_password_required() ) {
 									: 'data-choice-selectable'
 								} data-id="${data.id}" data-value="${data.value}" ${
 								data.groupId > 0 ? 'role="treeitem"' : 'role="option"'
-								}>
+								} style="padding-right: 0px !important">
 								
 									<span class="colorselect" style="background-color: ${color}"></span> <p class="infoselec">${data.label}</p>
 								</div>

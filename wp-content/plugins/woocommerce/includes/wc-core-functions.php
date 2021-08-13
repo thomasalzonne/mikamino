@@ -341,7 +341,6 @@ function wc_get_template( $template_name, $args = array(), $template_path = '', 
 	}
 
 	do_action( 'woocommerce_before_template_part', $action_args['template_name'], $action_args['template_path'], $action_args['located'], $action_args['args'] );
-
 	include $action_args['located'];
 
 	do_action( 'woocommerce_after_template_part', $action_args['template_name'], $action_args['template_path'], $action_args['located'], $action_args['args'] );

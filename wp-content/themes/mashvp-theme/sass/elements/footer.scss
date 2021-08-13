@@ -107,7 +107,7 @@ a.phbtn {
 
 .grid3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto 1fr auto;
     grid-column-gap: 3em;
     grid-row-gap: 1em;
 }
@@ -118,6 +118,15 @@ a.phbtn {
     border-radius: 50px;
     display: flex;
     z-index: 1;
+    min-width: 90px;
+    margin: auto;
+    max-width: 90px;
+}
+.explogoimg{
+    height: 40%;
+    margin: auto;
+    width: 40%;
+    object-fit: contain;
 }
 .exptext {
     grid-row: 2;
@@ -213,6 +222,15 @@ a.rsbtn {
 .rslogoC{
     grid-column: 2/span 6;
     height: fit-content;
+}
+.pb.grid12.full.pb70 {
+    display: flex;
+    z-index: 1;
+}
+.point.grid3 {
+    width: 20%;
+    display: unset;
+    grid-column: span 2;
 }
 @media screen and (max-width: 1350px) {
     .point.grid3 {

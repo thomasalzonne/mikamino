@@ -215,9 +215,31 @@ p.headertext {
   position: absolute;
   color: #FBF8E8;
   bottom: 23%;
-  font-size: 60px;
   line-height: 78px;
   max-width: 30%;
+}
+
+ul.sub-menu {
+  display: none;
+}
+
+ul.sub-menu {
+  width: 100%;
+  bottom: -207px;
+  position: absolute;
+  padding: 52px 0;
+  left: 0;
+  background-color: #FBF8E8;
+  border-bottom: 1px solid black;
+}
+
+li.submenu:hover ul.sub-menu {
+  display: block;
+}
+
+.menu-mainnav-container ul#menu-mainnav .submenu li {
+  width: fit-content;
+  margin-left: 8%;
 }
 
 a.headersliderbtn {
@@ -256,7 +278,7 @@ ul#menu-mainnav {
 }
 
 ul#menu-mainnav li {
-  margin: 0 25px;
+  padding: 38px 0;
 }
 
 .mainnav a {
@@ -264,6 +286,7 @@ ul#menu-mainnav li {
   color: white;
   font-size: 18px;
   line-height: 24px;
+  padding: 23px 27px;
 }
 
 .compte img {
@@ -449,6 +472,11 @@ ul#menu-mainnav-1 li {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1440px) {
+  p.headertext {
+    max-width: 40%;
+  }
+}
 @media screen and (max-width: 800px) {
   .producttext.mobmt50 {
     margin-top: 50px;
@@ -471,9 +499,23 @@ ul#menu-mainnav-1 li {
   }
 
   p.headertext {
-    font-size: 32px;
-    line-height: 42px;
-    bottom: 33%;
+    font-size: 32px !important;
+    line-height: 42px !important;
+    bottom: 15%;
+    max-width: 70%;
+  }
+
+  a.headersliderbtn {
+    bottom: 5%;
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 27% !important;
+  }
+
+  a.img1.rellax {
+    transform: unset !important;
+    margin-top: unset;
   }
 }
 @media screen and (max-height: 750px) {
@@ -656,6 +698,18 @@ a.btn {
   z-index: 2;
 }
 
+.valeur.v1.rellax {
+  margin-top: -334px;
+}
+
+.valeur.v3.rellax {
+  margin-top: 334px;
+}
+
+.grid12.wi90.ma.val.nogrg {
+  margin-bottom: -334px;
+}
+
 .valeurtextcontainer {
   visibility: hidden;
   height: 90%;
@@ -731,6 +785,50 @@ a.valeurbtn {
 @media screen and (max-width: 440px) {
   .valeur {
     height: 180px;
+  }
+}
+@media screen and (max-height: 864px) {
+  .valeur.v1.rellax {
+    margin-top: -342px;
+  }
+
+  .valeur.v3.rellax {
+    margin-top: 342px;
+  }
+
+  .grid12.wi90.ma.val.nogrg {
+    margin-bottom: -342px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid12.wi90.ma.val.nogrg {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-height: 770px) {
+  .valeur.v1.rellax {
+    margin-top: -363px;
+  }
+
+  .valeur.v3.rellax {
+    margin-top: 363px;
+  }
+
+  .grid12.wi90.ma.val.nogrg {
+    margin-bottom: -363px;
+  }
+}
+@media screen and (max-height: 720px) {
+  .valeur.v1.rellax {
+    margin-top: -376px;
+  }
+
+  .valeur.v3.rellax {
+    margin-top: 376px;
+  }
+
+  .grid12.wi90.ma.val.nogrg {
+    margin-bottom: -376px;
   }
 }
 .reviews {
@@ -1088,7 +1186,7 @@ a.phbtn {
 
 .grid3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto 1fr auto;
   grid-column-gap: 3em;
   grid-row-gap: 1em;
 }
@@ -1100,6 +1198,16 @@ a.phbtn {
   border-radius: 50px;
   display: flex;
   z-index: 1;
+  min-width: 90px;
+  margin: auto;
+  max-width: 90px;
+}
+
+.explogoimg {
+  height: 40%;
+  margin: auto;
+  width: 40%;
+  object-fit: contain;
 }
 
 .exptext {
@@ -1215,6 +1323,17 @@ a.rsbtn {
 .rslogoC {
   grid-column: 2/span 6;
   height: fit-content;
+}
+
+.pb.grid12.full.pb70 {
+  display: flex;
+  z-index: 1;
+}
+
+.point.grid3 {
+  width: 20%;
+  display: unset;
+  grid-column: span 2;
 }
 
 @media screen and (max-width: 1350px) {
@@ -1663,9 +1782,10 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
 h1.product_title.entry-title {
   grid-row: 2;
   grid-column: span 4;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 65px;
   color: #565656;
+  margin-bottom: 20px;
 }
 
 .summary p.price {
@@ -1690,6 +1810,13 @@ p.stock.out-of-stock {
   font-size: 20px;
 }
 
+.produitC .product .summary p.price {
+  font-size: 32px;
+  line-height: 41px;
+  width: fit-content;
+  margin: 0;
+}
+
 .produitC form.cart {
   grid-row: 4;
   grid-column: span 4;
@@ -1697,6 +1824,7 @@ p.stock.out-of-stock {
   grid-template-rows: 90px 90px 70px;
   grid-row-gap: 40px;
   position: relative;
+  margin-top: 20px;
 }
 
 button.single_add_to_cart_button.button.alt {
@@ -1922,6 +2050,12 @@ form.variations_form.cart span.colorselect {
   border-radius: 25px;
 }
 
+.produitC p.oldprice.price {
+  text-decoration: line-through;
+  font-size: 14px !important;
+  margin-top: auto;
+}
+
 form.variations_form.cart .choices__item.choices__item--selectable {
   display: flex;
   line-height: 45px;
@@ -1939,7 +2073,10 @@ form.variations_form.cart p.infoselec {
   position: absolute;
   left: 0;
   right: 0;
+  bottom: 0;
   text-align: center;
+  top: 0;
+  line-height: 72px;
 }
 
 form.variations_form.cart a.reset_variations {
@@ -2017,7 +2154,7 @@ p.stock.in-stock {
   margin: unset;
 }
 
-.woocommerce-variation-availability {
+p.stock.out-of-stock {
   position: absolute;
   right: 0;
   top: -195px;
@@ -2251,7 +2388,38 @@ form.woocommerce-EditAccountForm.edit-account fieldset {
 .panierC {
   width: 90%;
   max-width: 1520px;
-  margin: 50px auto;
+  margin: 150px auto 50px auto;
+}
+
+.panierC label.screen-reader-text {
+  display: none;
+}
+
+.woocommerce ul#shipping_method li {
+  display: flex;
+  margin: 10px 0;
+}
+
+#packlink-drop-off-picker {
+  margin-top: unset !important;
+}
+
+.panierC nav.woocommerce-breadcrumb {
+  display: block;
+  margin-bottom: 40px;
+  color: #565656;
+}
+
+.paniertitle {
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 80px;
+  color: #565656;
+}
+
+.woocommerce tr.woocommerce-shipping-totals.shipping ul#shipping_method li {
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .panierC img {
@@ -2412,7 +2580,7 @@ a.headerbtn {
   height: 70px;
   border-radius: 35px;
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-decoration: none;
   text-align: center;
   line-height: 70px;
@@ -2423,7 +2591,7 @@ a.headerbtn {
   font-size: 50px;
   line-height: 65px;
   color: #FBF8E8;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .imgtxttxt.ltr {
@@ -2492,7 +2660,7 @@ a.marquebtn {
 }
 
 .imgtxtC {
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 .bdttitle {
@@ -3091,6 +3259,7 @@ a.btibtn {
 }
 .dbtC {
   margin-bottom: 200px;
+  margin-top: 120px;
 }
 
 .dbttl {
@@ -3402,6 +3571,10 @@ button.dropdown::after {
     margin-bottom: 50px;
     margin-top: 0px;
   }
+}
+.btfw {
+  grid-column: 2/span 10;
+  margin: 120px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

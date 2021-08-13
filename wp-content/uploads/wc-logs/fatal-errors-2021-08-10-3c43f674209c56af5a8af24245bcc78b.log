@@ -1,0 +1,11 @@
+2021-08-10T13:47:53+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_variation_price() in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\woocommerce\single-product\price.php:23
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1573): wc_get_template('single-product/...')
+#2 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(292): woocommerce_template_single_price('')
+#3 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\laragon\www\mikamino\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\woocommerce\content-single-product.php(112): do_action('woocommerce_sin...')
+#6 C:\laragon\www\mikamino\wp-includes\template.php(732): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\mikamino\wp-content\plugins\woocommerce\includes\wc-core-funct dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\woocommerce\single-product\price.php à la ligne 23
+

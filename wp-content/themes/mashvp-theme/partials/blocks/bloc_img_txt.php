@@ -1,4 +1,8 @@
-<div class="imgtxtC">
+<?php if(get_sub_field('on_hp')): ?>
+    <div class="imgtxtC" id='<?= get_sub_field('section') ?>'>
+<?php else: ?>
+    <div class="imgtxtC">
+<?php endif; ?>
     <div class="grid12 wi90 ma imgtxt">
         <?php if(get_sub_field('sens') == "ltr"): ?>
             <div class="imgtxtimg ltr" style="background-image: url('<?= get_sub_field('image')['url'] ?>')"></div>
@@ -8,7 +12,9 @@
                         <div class="iattitle"><?= get_sub_field('title') ?></div>
                         <div class="iattext"><?= get_sub_field('texte') ?></div>
                         <?php if(get_sub_field('btn') == 1 ): ?>
-                            <a class="marquebtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+                            <?php if(get_sub_field('btn_link') && get_sub_field('btn_text')): ?>
+                                <a class="marquebtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+                            <?php endif; ?>
                         <?php endif; ?>
                     <?php endwhile; ?>
                 </div>
@@ -22,7 +28,9 @@
                         <div class="iattitle"><?= get_sub_field('title') ?></div>
                         <div class="iattext"><?= get_sub_field('texte') ?></div>
                         <?php if(get_sub_field('btn') == 1 ): ?>
-                            <a class="marquebtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+                            <?php if(get_sub_field('btn_link') && get_sub_field('btn_text')): ?>
+                                <a class="marquebtn" href="<?= get_sub_field('btn_link') ?>"><?= get_sub_field('btn_text') ?></a>
+                            <?php endif; ?>
                         <?php endif; ?>
                     <?php endwhile; ?>
                 </div>

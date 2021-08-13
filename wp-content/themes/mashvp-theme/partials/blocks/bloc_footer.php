@@ -22,7 +22,7 @@
                                 <?php while(have_rows('le_point')): the_row() ?>
                                     <div class="point grid3">
                                         <div class="explogo">
-                                            <?php include  get_template_directory() . "/assets/img/account.svg" ?>
+                                            <img class ="explogoimg" src="<?= get_sub_field('img') ?>" alt="">
                                         </div>
                                         <div class="exptext">
                                             <div class="exptitle"><?= get_sub_field('title') ?></div>
@@ -46,9 +46,11 @@
                         <?php if(have_rows('social-network')): ?>
                             <div class="rsC grid2">
                                 <?php while(have_rows('social-network')): the_row() ?>
-                                    <a class="rsbtn" href="<?= get_sub_field('link') ?>">
-                                        <img src="<?= get_sub_field('img')['url'] ?>" alt="">
-                                    </a>
+                                    <?php if(get_sub_field('link') && get_sub_field('img')): ?>
+                                        <a class="rsbtn" href="<?= get_sub_field('link') ?>">
+                                            <img src="<?= get_sub_field('img')['url'] ?>" alt="">
+                                        </a>
+                                    <?php endif; ?>
                                 <?php endwhile; ?>
                             </div>
                         <?php endif; ?>
@@ -93,4 +95,17 @@
             x.style.display = "block";
         }
     }
+    var submenus = document.querySelectorAll('.submenu')
+    Array.from(submenus).map(el => {
+        el.addEventListener('mouseenter', e => {
+            $(el).children('a').css('background-color', 'white')
+            $(el).children('a').css('border-radius', '50px')
+            $(el).find('.sub-menu').css('display', 'block')
+        })
+        el.addEventListener('mouseleave', e => {
+            $(el).children('a').css('background-color', 'unset')
+            $(el).children('a').css('border-radius', 'unset')
+            $(el).find('.sub-menu').css('display','none')
+        })
+    })
 </script>

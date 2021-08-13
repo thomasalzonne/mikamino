@@ -1,0 +1,109 @@
+2021-08-11T15:02:02+00:00 CRITICAL Uncaught SellsyApi\Exception\SellsyError: Value unity form list does not exist in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Request\Request.php:249
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Request\Request.php(170): SellsyApi\Request\Request->handleResponse(Object(GuzzleHttp\Psr7\Stream))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Service\GenericService.php(82): SellsyApi\Request\Request->call('Catalogue.creat...', Array)
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\functions.php(133): SellsyApi\Service\GenericService->call('create', Array)
+#3 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(292): plugin_name_sync_on_product_save('4299', 399, '_edit_lock', '1628693977:1')
+#4 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#5 C:\laragon\www\mikamino\wp-includes\plugin.php(484): WP_Hook->do_action(A dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Request\Request.php à la ligne 249
+
+2021-08-11T15:02:39+00:00 CRITICAL Uncaught SellsyApi\Exception\SellsyError: Value unity form list does not exist in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Request\Request.php:249
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Request\Request.php(170): SellsyApi\Request\Request->handleResponse(Object(GuzzleHttp\Psr7\Stream))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Service\GenericService.php(82): SellsyApi\Request\Request->call('Catalogue.creat...', Array)
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\functions.php(133): SellsyApi\Service\GenericService->call('create', Array)
+#3 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(292): plugin_name_sync_on_product_save(4320, 400, '_edit_lock', '1628694158:1')
+#4 C:\laragon\www\mikamino\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#5 C:\laragon\www\mikamino\wp-includes\plugin.php(484): WP_Hook->do_action(Arr dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\ferjul17\sellsy-api\src\Request\Request.php à la ligne 249
+
+2021-08-11T15:23:23+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+
+2021-08-11T15:28:40+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+
+2021-08-11T15:29:34+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+
+2021-08-11T15:29:53+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+
+2021-08-11T15:31:02+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+
+2021-08-11T15:35:10+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+
+2021-08-11T15:35:38+00:00 CRITICAL Uncaught GuzzleHttp\Exception\ServerException: Server error: `POST https://apifeed.sellsy.com/0/` resulted in a `500 Internal Server Error` response:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow,noarchive"  (truncated...)
+ in C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php:113
+Stack trace:
+#0 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Middleware.php(65): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response))
+#1 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\promises\src\Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 C:\l dans C:\laragon\www\mikamino\wp-content\themes\mashvp-theme\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php à la ligne 113
+

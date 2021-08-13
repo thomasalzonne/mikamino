@@ -16,7 +16,9 @@
                         <div class="testheight">
                             <div class="conseildesc"><?= get_sub_field('description') ?></div>
                             <div class="conseilbtnC">
-                                <a href="<?= get_sub_field('btn_link') ?>" class="conseilbtn"><?= get_sub_field('btn_text') ?></a>
+                                <?php if(get_sub_field('btn_link') && get_sub_field('btn_text')): ?>
+                                    <a href="<?= get_sub_field('btn_link') ?>" class="conseilbtn"><?= get_sub_field('btn_text') ?></a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
